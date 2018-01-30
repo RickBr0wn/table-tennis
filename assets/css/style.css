@@ -64,3 +64,15 @@ button{
  footer{
      text-align: center;
  }
+
+ .tournament{
+    margin-left: 100px;
+    margin-top: 50px;
+ }
+
+ .label{
+    color: #252F3D !important;
+    font-weight: 400 !important;
+    margin-top: 3px !important;
+    font-size: 100% !important;
+ }
