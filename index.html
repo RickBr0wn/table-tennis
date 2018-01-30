@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
+    <!-- Optional Theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="jquery.bracket.min.css" />
+    <script type="text/javascript" src="assets/javascript/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="assets/javascript/jquery.bracket.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.bracket.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/javascript/javascript.js"></script>
     <title>Table Tennis Tournament</title>
@@ -33,7 +35,7 @@
 
         <div class="table-wrapper">
             <h2>Group Stage</h2>
-            The <strong>group stage</strong>. Each player plays every player in their group once. Three tournament points are awarded for a win, and zero tournament points for a loss. The top <strong>four</strong> players from each group will progress into the <strong>knockout</strong> phase of the tournament. 
+            The <strong>group stage</strong>. Each player plays every player in their group once. Three tournament points are awarded for a win, and zero tournament points for a loss. The <strong>three</strong> players with the highest tournament points from each group will progress into the <strong>knockout</strong> phase of the tournament, togther with <strong>two</strong> of the <strong>highest</strong> scoring players that are left. 
             <p>** Total points scored in each match are also added together, in the event of a tie-breaker.</p>
             <div class="row">
                 <div class="test col-md-3">
@@ -367,374 +369,551 @@
                         </table>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="test col-md-3"></div>
+                    <div class="test col-md-3">
+                        <h2>Group i</h2>
+                        <table>
+                            <tr>
+                                <th>Player Name</th>
+                                <th>Games Played</th>
+                                <th>Match Points</th>
+                                <th>Tournament Points</th>
+                            </tr>
+                            <tr>
+                                <td>Player 41</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Player 42</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Player 43</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Player 44</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Player 45</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="test col-md-3">
+                        <h2>Group J</h2>
+                        <table>
+                            <tr>
+                                <th>Player Name</th>
+                                <th>Games Played</th>
+                                <th>Match Points</th>
+                                <th>Tournament Points</th>
+                            </tr>
+                            <tr>
+                                <td>Player 46</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Player 47</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Player 48</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Player 49</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Player 50</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="test col-md-3"></div>
+                </div>
         </div>
 
         
         <div class="group-wrapper">
-            <h2>Group A Matches</h2>
+            <h2>Group A Results</h2>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 3
+                    player 1<br> vs<br> player 3<br>
                     <button onclick="popUp()" id="a1">Enter Score</button>
                 </div>
 
                 <div class="col-md-1 group-table">
-                    player 1 vs player 4
+                    player 1<br> vs<br> player 4<br>
                     <button onclick="popUp()" id="a2">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 2
+                    player 1<br> vs<br> player 2<br>
                     <button id="a3">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 5
+                    player 1<br> vs<br> player 5<br>
                     <button id="a4">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 3
+                    player 2<br> vs<br> player 3<br>
                     <button id="a5">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 4
+                    player 2<br> vs<br> player 4<br>
                     <button id="a6">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 5
+                    player 2<br> vs<br> player 5<br>
                     <button id="a7">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 4
+                    player <br> vs<br> player 4<br>
                     <button id="a8">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 5
+                    player 3<br> vs<br> player 5<br>
                     <button id="a9">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 4 vs player 5
+                    player 4<br> vs<br> player 5<br>
                     <button id="a10">Enter Score</button>
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <h2>Group B Matches</h2>
+            <h2>Group B Results</h2>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 3
+                    player 6<br> vs<br> player 8<br>
                     <button id="a1">Enter Score</button>
                 </div>
 
                 <div class="col-md-1 group-table">
-                    player 1 vs player 4
+                    player 6<br> vs<br> player 9<br>
                     <button id="a2">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 2
+                    player 6<br> vs<br> player 7<br>
                     <button id="a3">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 5
+                    player 6<br> vs<br> player 10<br>
                     <button id="a4">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 3
+                    player 7<br> vs<br> player 8<br>
                     <button id="a5">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 4
+                    player 7<br> vs<br> player 9<br>
                     <button id="a6">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 5
+                    player 7<br> vs<br> player 10<br>
                     <button id="a7">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 4
+                    player 8<br> vs<br> player 9<br>
                     <button id="a8">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 5
+                    player 8<br> vs<br> player 10<br>
                     <button id="a9">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 4 vs player 5
+                    player 9<br> vs<br> player 10<br>
                     <button id="a10">Enter Score</button>
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <h2>Group C Matches</h2>
+            <h2>Group C Results</h2>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 3
+                    player 11<br> vs<br> player 13<br>
                     <button id="a1">Enter Score</button>
                 </div>
 
                 <div class="col-md-1 group-table">
-                    player 1 vs player 4
+                    player 11<br> vs<br> player 14<br>
                     <button id="a2">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 2
+                    player 11<br> vs<br> player 12<br>
                     <button id="a3">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 5
+                    player 11<br> vs<br> player 15<br>
                     <button id="a4">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 3
+                    player 12<br> vs<br> player 13<br>
                     <button id="a5">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 4
+                    player 12<br> vs<br> player 14<br>
                     <button id="a6">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 5
+                    player 12<br> vs<br> player 15<br>
                     <button id="a7">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 4
+                    player 13<br> vs<br> player 14<br>
                     <button id="a8">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 5
+                    player 13<br> vs<br> player 15<br>
                     <button id="a9">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 4 vs player 5
+                    player 14<br> vs<br> player 15<br>
                     <button id="a10">Enter Score</button>
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <h2>Group D Matches</h2>
+            <h2>Group D Results</h2>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 3
+                    player 16<br> vs<br> player 18<br>
                     <button id="a1">Enter Score</button>
                 </div>
 
                 <div class="col-md-1 group-table">
-                    player 1 vs player 4
+                    player 16<br> vs<br> player 19<br>
                     <button id="a2">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 2
+                    player 16<br> vs<br> player 17<br>
                     <button id="a3">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 5
+                    player 16<br> vs<br> player 20<br>
                     <button id="a4">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 3
+                    player 17<br> vs<br> player 18<br>
                     <button id="a5">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 4
+                    player 17<br> vs<br> player 19<br>
                     <button id="a6">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 5
+                    player 17<br> vs<br> player 20<br>
                     <button id="a7">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 4
+                    player 18<br> vs<br> player 19<br>
                     <button id="a8">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 5
+                    player 18<br> vs<br> player 20<br>
                     <button id="a9">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 4 vs player 5
+                    player 19<br> vs<br> player 20<br>
                     <button id="a10">Enter Score</button>
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <h2>Group E Matches</h2>
+            <h2>Group E Results</h2>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 3
+                    player 21<br> vs<br> player 23<br>
                     <button id="a1">Enter Score</button>
                 </div>
 
                 <div class="col-md-1 group-table">
-                    player 1 vs player 4
+                    player 21<br> vs<br> player 24<br>
                     <button id="a2">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 2
+                    player 21<br> vs<br> player 22<br>
                     <button id="a3">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 5
+                    player 21<br> vs<br> player 25<br>
                     <button id="a4">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 3
+                    player 22<br> vs<br> player 23<br>
                     <button id="a5">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 4
+                    player 22<br> vs<br> player 24<br>
                     <button id="a6">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 5
+                    player 22<br> vs<br> player 25<br>
                     <button id="a7">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 4
+                    player 23<br> vs<br> player 24<br>
                     <button id="a8">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 5
+                    player 23<br> vs<br> player 25<br>
                     <button id="a9">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 4 vs player 5
+                    player 24<br> vs<br> player 25<br>
                     <button id="a10">Enter Score</button>
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <h2>Group F Matches</h2>
+            <h2>Group F Results</h2>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 3
+                    player 26<br> vs<br> player 29<br>
                     <button id="a1">Enter Score</button>
                 </div>
 
                 <div class="col-md-1 group-table">
-                    player 1 vs player 4
+                    player 26<br> vs<br> player 29<br>
                     <button id="a2">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 2
+                    player 26<br> vs<br> player 27<br>
                     <button id="a3">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 5
+                    player 26<br> vs<br> player 30<br>
                     <button id="a4">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 3
+                    player 27<br> vs<br> player 28<br>
                     <button id="a5">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 4
+                    player 27<br> vs<br> player 29<br>
                     <button id="a6">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 5
+                    player 27<br> vs<br> player 30<br>
                     <button id="a7">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 4
+                    player 28<br> vs<br> player 29<br>
                     <button id="a8">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 5
+                    player 28<br> vs<br> player 30
                     <button id="a9">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 4 vs player 5
+                    player 29<br> vs<br> player 30
                     <button id="a10">Enter Score</button>
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <h2>Group G Matches</h2>
+            <h2>Group G Results</h2>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 3
+                    player 31<br> vs<br> player 33<br>
                     <button id="a1">Enter Score</button>
                 </div>
 
                 <div class="col-md-1 group-table">
-                    player 1 vs player 4
+                    player 31<br> vs<br> player 34<br>
                     <button id="a2">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 2
+                    player 31<br> vs<br> player 32<br>
                     <button id="a3">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 5
+                    player 31<br> vs<br> player 35<br>
                     <button id="a4">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 3
+                    player 32<br> vs<br> player 33<br>
                     <button id="a5">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 4
+                    player 32<br> vs<br> player 34<br>
                     <button id="a6">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 5
+                    player 32<br> vs<br> player 35<br>
                     <button id="a7">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 4
+                    player 33<br> vs<br> player 34<br>
                     <button id="a8">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 5
+                    player 33<br> vs<br> player 35<br>
                     <button id="a9">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 4 vs player 5
+                    player 34<br> vs<br> player 35<br>
                     <button id="a10">Enter Score</button>
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <h2>Group H Matches</h2>
+            <h2>Group H Results</h2>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 3
+                    player 36<br> vs<br> player 38<br>
+                    <button id="a1">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 36<br> vs<br> player 39<br>
+                    <button id="a2">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 36<br> vs<br> player 37<br>
+                    <button id="a3">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 36<br> vs<br> player 40<br>
+                    <button id="a4">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 37<br> vs<br> player 38<br>
+                    <button id="a5">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 37<br> vs<br> player 39<br>
+                    <button id="a6">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 37<br> vs<br> player 40<br>
+                    <button id="a7">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 38<br> vs<br> player 39<br>
+                    <button id="a8">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 38<br> vs<br> player 40<br>
+                    <button id="a9">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 39<br> vs<br> player 40<br>
+                    <button id="a10">Enter Score</button>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <h2>Group i Results</h2>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1 group-table">
+                    player 41<br> vs<br> player 43<br>
                     <button id="a1">Enter Score</button>
                 </div>
 
                 <div class="col-md-1 group-table">
-                    player 1 vs player 4
+                    player 41<br> vs<br> player 44<br>
                     <button id="a2">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 2
+                    player 41<br> vs<br> player 42<br>
                     <button id="a3">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 1 vs player 5
+                    player 41<br> vs<br> player 45<br>
                     <button id="a4">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 3
+                    player 42<br> vs<br> player 43<br>
                     <button id="a5">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 4
+                    player 42<br> vs<br> player 44<br>
                     <button id="a6">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 2 vs player 5
+                    player 42<br> vs<br> player 45
                     <button id="a7">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 4
+                    player 43<br> vs<br> player 44<br>
                     <button id="a8">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 3 vs player 5
+                    player 43<br> vs<br> player 45<br>
                     <button id="a9">Enter Score</button>
                 </div>
                 <div class="col-md-1 group-table">
-                    player 4 vs player 5
+                    player 44<br> vs<br> player 45<br>
+                    <button id="a10">Enter Score</button>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <h2>Group J Results</h2>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-1 group-table">
+                    player 46<br> vs<br> player 48
+                    <button id="a1">Enter Score</button>
+                </div>
+
+                <div class="col-md-1 group-table">
+                    player 46<br> vs<br> player 49<br>
+                    <button id="a2">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 46<br> vs<br> player 47<br>
+                    <button id="a3">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 46<br> vs<br> player 50<br>
+                    <button id="a4">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 47<br> vs<br> player 48<br>
+                    <button id="a5">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 47<br> vs<br> player 49<br>
+                    <button id="a6">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 47<br> vs<br> player 50
+                    <button id="a7">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 48<br> vs<br> player 49<br>
+                    <button id="a8">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 48<br> vs<br> player 50
+                    <button id="a9">Enter Score</button>
+                </div>
+                <div class="col-md-1 group-table">
+                    player 49<br> vs<br> player 50<br>
                     <button id="a10">Enter Score</button>
                 </div>
                 <div class="col-md-1"></div>
@@ -744,19 +923,49 @@
 
             <div class="main-wrapper">
                 <h2>Knockout Stage</h2>
+                <p>The <strong>knockout</strong> phase. Games are played in sequence to the playing schedule displayed below. The <strong>wildcard</strong> spots will be taken by the two <strong>highest</strong> scoring players ranked 4th from the previous round. Congratulations for making it this far. And <strong>good luck!!</strong></p>
             </div>
 
             <div class="tournament"></div>
+
+    <script>
+        var minData = {
+            teams: [
+                ["Group A #1", "Wildcard #1"],
+                ["Group B #1", "Group J #3"],
+                ["Group C #1", "Group i #3"],
+                ["Group D #1", "Group H #3"],
+                ["Group E #1", "Group G #3"],
+                ["Group J #2", "Group C #2"],
+                ["Group i #2", "Group B #2"],
+                ["Group H #2", "Group A #2"],
+                ["Group G #2", "Group D #2"],
+                ["Group E #2", "Group F #3"],
+                ["Group J #1", "Wildcard #2"],
+                ["Group F #1", "Group E #3"],
+                ["Group G #1", "Group D #3"],
+                ["Group H #1", "Group C #3"],
+                ["Group i #1", "Group B #3"],
+                ["Group F #2", "Group A #3"]
+            ],
+            results: [
+                
+            ]
+        }
+
+        $('.tournament').bracket({
+            init: minData,
+            teamWidth: 100
+        })
+    </script>
         </div>
     </div>
 
     <footer>
-        Developed by Rick Brown 2018
+        KnockOut Data Completed - Developed by Rick Brown 2018
     </footer>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
-    <script type="text/javascript" src="jquery.bracket.min.js"></script>
 </body>
 </html>
