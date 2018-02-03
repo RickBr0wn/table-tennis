@@ -12,7 +12,6 @@
     <script type="text/javascript" src="assets/javascript/jquery.bracket.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.bracket.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/javascript/javascript.js"></script>
     <title>Table Tennis Tournament</title>
 </head>
 <body>
@@ -21,14 +20,15 @@
             <h1>Hobbs Parker Table Tennis Tournament</h1>  
         </div>
 
-        <div class="player-entry">
+        <div id="player-entry" style="display: none;">
             <h2>Entering the player data</h2>
             Please paste the player data into the following text box. 
             <p><strong>**Important**</strong>  Each player should be separated by a comma and a space.</p>
             <input type="text" name="test" class="text-muted" id="text-entry" placeholder="EG: Michelle King, Richard Brown, Kayla King, Harry Brown, etc">
+            <button onclick="submitPlayerData()" id="entry-button" type="submit">Submit Player Data</button>
         </div>
-
-        <button id="entry-button" type="submit">Submit Player Data</button>
+        <button onclick="hidePlayerData()" id="btn-hidden">Show Player Entry</button>
+        
         <br>
 
         <hr>
@@ -779,5 +779,6 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/javascript/javascript.js"></script>
 </body>
 </html>
