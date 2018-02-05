@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Randomise an array
 
 var arr = ['Mark', 'Elwyn', 'Peter', 'John R', 'Martin', 'Ellie', 'Sue M', 'Hayley A', 'Paul', 'Jon C', 'Tanya', 'Mandy', 'Jamie', 'James J', 'Malcolm', 'Stuart', 'Sam', 'Sophie', 'Matt', 'Philip', 'Andrea', 'Heather', 'Susan', 'David J', 'Irianna', 'Steve', 'Jane', 'Jon R', 'Lynsey', 'Jackie', 'Claire', 'Beki', 'Dawn', 'Kate', 'Michelle', 'Tracey', 'Natasha', 'Moya', 'Rachel', 'Demelza', 'John W', 'Liz', 'Bill D', 'Sarah', 'James H', 'Alex', 'Sue S', 'Lesley', 'Emily', 'Hana'];
@@ -18,3 +19,22 @@ function shuffleArray(arr) {
 }
 
 console.log(shuffleArray(arr));
+=======
+function hidePlayerData(){
+  let div = document.getElementById('player-entry');
+  let hideButtonText = document.getElementById('btn-hidden');
+
+  if (div.style.display !== 'none') {
+        div.style.display = 'none';
+        hideButtonText.innerHTML = 'Show Player Entry'; 
+    }
+    else {
+        div.style.display = 'block';
+        hideButtonText.innerHTML = 'Hide Player Entry';
+    }
+}
+
+function submitPlayerData(){
+    alert('This feature can only be used again, when the current tournament has been completed.');
+}
+>>>>>>> 72267872a3b7f6d377abab391ec27dcabcb144dc
